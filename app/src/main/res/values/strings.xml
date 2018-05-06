@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Flickr Gallery</string>
+    <string name="author">Maksim Eksler</string>
+
+    <string name="conn_alert">This App is not supposed to work without internet connection</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">by Eksler M.</string>
+    <string name="about_version">Version 1.0</string>
+
+    <string name="nav_content">Content type:</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+    <string name="nav_author">Author</string>
+
+    <string name="context_all">All owner`s pictures</string>
+    <string name="context_tags">Owner + current query</string>
+
+    <string name="main_search">Search window</string>
+    <string name="main_clear">Clear owner</string>
+    <string name="main_searchmode">Search:</string>
+    <string name="main_bytags">by tags</string>
+    <string name="main_bytext">by text</string>
+    <string name="main_byowner">by owner`s ID</string>
+    <string name="main_ownerall">All owner`s</string>
+
+    <string name="image_open">Open menu</string>
+    <string name="image_close">Close menu</string>
+    <string name="image_share">Share picture</string>
+    <string name="image_download">Download picture</string>
+
+    <string name="prefs_sorttitle">Sorting method</string>
+    <string name="prefs_sortdesc">Choose a way to sort content</string>
+    <string name="prefs_sorthead">New sorting method:</string>
+    <string name="prefs_sizetitle">Picture size</string>
+    <string name="prefs_sizedesc">Size of an image for detailed view</string>
+    <string name="prefs_sizehead">New picture size:</string>
+
+    <string name="share">Share your Flickr discovery with friends!</string>
+
+    <string name="no_access">Without this permission You won`t be able to download photos.</string>
+
+    <string name="author_about"><![CDATA[
+        <p> </p>
+        <p>Strange looking bearded guy in front of armored ambulance car, too lazy to translate whole bumch of his own text into english. =)</p>
+        <p>This one I devote to my elder son Eugene. Hope, you`ll always seek new ways to achieve your dreams!"</p>
+            ]]></string>
+
+    <string name="about_text1">This is my test gallery application for admission to mobile development school by</string>
+    <string name="yandex">Yandex</string>
+    <string name="about_text2"><![CDATA[
+        <p> It allows user to operate with one of the most famous photohostings Flickr.com through it`s API.</p>
+        <p> Application provides possibility to search images by tags and text query, moreover some additional searching functions, as, for example, context menu with options to find all other images of "that one you`re interested in" owner. Besides, it allows result sorting by methods, supported by API, and choosing image size for detailed view (as far not all of them - especially old ones - are presented in all size combination on Flickr).</p>
+        <p> On start, application provides to user a list of Flickr recent uploaded photos. Rather selfexplanatory, sorting won`t work now, but, surprisingly, content filtration won`t too in this Flickr API method. So far, it`s hosting authors` to ask - why. =)</p>
+        <p> You can download images you`ve found worth it or share their link with others</p>
+        <p> Detailed view activity realized with ViewPager and ImageViewTouch, that allows navigation through images with swiping, and also provides zooming function.</p>
+        <p> Image loading and caching are done with Glide library, API interactions with Retrofit, and managing inner database - with ROOM + LiveData.</p>
+            ]]></string>
+
+    <string-array name="content">
+        <item>Photos</item>
+        <item>Screenshots</item>
+        <item>"Other"</item>
+        <item>Photos &#38; screens</item>
+        <item>Screens &#38; "other"</item>
+        <item>Photos &#38; "other"</item>
+        <item>All content</item>
+    </string-array>
+
+    <string-array name="sorting">
+        <item>By &#8595; of date posted</item>
+        <item>By &#8593; of date posted</item>
+        <item>By &#8595; of date taken</item>
+        <item>By &#8593; of date taken</item>
+        <item>By &#8595; of interestingness</item>
+        <item>By &#8593; of interestingness</item>
+        <item>By relevance</item>
+    </string-array>
+
+    <string-array name="sorting_values">
+        <item>date-posted-desc</item>
+        <item>date-posted-asc</item>
+        <item>date-taken-desc</item>
+        <item>date-taken-asc</item>
+        <item>interestingness-desc</item>
+        <item>interestingness-asc</item>
+        <item>relevance</item>
+    </string-array>
+
+    <string-array name="size">
+        <item>Large (2048 on longest side)</item>
+        <item>Large (1600 on longest side)</item>
+        <item>Large (1024 on longest side)</item>
+        <item>Medium (800 on longest side)</item>
+        <item>Medium (640 on longest side)</item>
+    </string-array>
+
+    <string-array name="size_values">
+        <item>_k.jpg</item>
+        <item>_h.jpg</item>
+        <item>_b.jpg</item>
+        <item>_c.jpg</item>
+        <item>_z.jpg</item>
+    </string-array>
+
+</resources>

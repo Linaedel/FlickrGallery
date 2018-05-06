@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.linaedelyandex.flickrgallery">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ApplicationGallery"
+        android:allowBackup="true"
+        android:icon="@mipmap/flickr_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/CollapseActivityTheme">
+        <activity android:name=".Gallery">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Image"
+            android:theme="@style/ImageTheme" />
+        <activity
+            android:name=".Nav_Settings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Nav_About"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Nav_Author"
+            android:theme="@style/CollapseActivityTheme"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="PREF_SORT"
+        android:title="@string/prefs_sorttitle"
+        android:summary="@string/prefs_sortdesc"
+        android:entries="@array/sorting"
+        android:entryValues="@array/sorting_values"
+        android:defaultValue="date-posted-desc"
+        android:dialogTitle="@string/prefs_sorthead"/>
+
+    <ListPreference
+        android:key="PREF_SIZE"
+        android:title="@string/prefs_sizetitle"
+        android:summary="@string/prefs_sizedesc"
+        android:entries="@array/size"
+        android:entryValues="@array/size_values"
+        android:defaultValue="_b.jpg"
+        android:dialogTitle="@string/prefs_sizehead"/>
+
+</PreferenceScreen>

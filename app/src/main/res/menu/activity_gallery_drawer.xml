@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <item
+        android:title="@string/nav_content"
+        android:icon="@drawable/ic_menu_gallery"/>
+    <!--При наличии тайтла спиннер отображается некорректно-->
+    <item
+        android:id="@+id/nav.content"
+        app:actionViewClass="android.widget.Spinner"
+        app:showAsAction="always"
+        android:entries="@array/sorting"/>
+
+    <item
+        android:id="@+id/nav.settings"
+        android:icon="@drawable/ic_settings_applications_black_24dp"
+        android:title="@string/nav_settings"/>
+
+    <item
+        android:id="@+id/nav.about"
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        android:title="@string/nav_about"/>
+
+    <item
+        android:id="@+id/nav.author"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="@string/nav_author"/>
+
+</menu>
